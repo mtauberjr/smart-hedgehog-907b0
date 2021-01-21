@@ -1,13 +1,19 @@
-+++
-title = "Compose"
-# define chart data here
-[data]
-  fileLink = "content/projects.csv" # path to where csv is stored
-  colors = ["#627c62", "#11819b", "#ef7f1a", "#4e1154"] # chart colors
-  columnTitles = ["Section", "Status", "Author"] # optional if no table will be displayed from dataset
-  baseChartOn = 3 # number of column the chart(s) and graph should be drawn from # can be overridden directly via shortcode parameter # it's therefore optional
-  title = "Projects"
-+++
+---
+title: God Saves
+data:
+  fileLink: content/projects.csv
+  colors:
+    - '#627c62'
+    - '#11819b'
+    - '#ef7f1a'
+    - '#4e1154'
+  columnTitles:
+    - Section
+    - Status
+    - Author
+  baseChartOn: 3
+  title: Projects
+---
 
 {{< block "grid-2" >}}
 {{< column >}}
